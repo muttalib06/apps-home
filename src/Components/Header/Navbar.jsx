@@ -17,13 +17,27 @@ const Navbar = () => {
         </div>
       </div>
       <div className="space-x-5 font-medium">
-        <NavLink>Home</NavLink>
-        <NavLink>Apps</NavLink>
-        <NavLink>Installation</NavLink>
+        <NavLink
+          className={({isActive}) => {
+           return  isActive ? "text-[#632EE3] border-b" : "";
+          }}
+          to="/"
+        >
+          Home
+        </NavLink>
+        <NavLink  className={({isActive}) => {
+           return  isActive ? "text-[#632EE3] border-b" : "";
+          }} to="/apps">Apps</NavLink>
+        <NavLink  className={({isActive}) => {
+           return  isActive ? "text-[#632EE3] border-b" : "";
+          }} to="/installation">Installation</NavLink>
       </div>
 
       <div>
-        <button onClick={handleGithubOpen} className="btn text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
+        <button
+          onClick={handleGithubOpen}
+          className="btn text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2]"
+        >
           <FaGithub></FaGithub> Contribute
         </button>
       </div>
