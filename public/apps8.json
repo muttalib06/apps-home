@@ -1,0 +1,146 @@
+[
+  {
+    "image": "https://liteapks.com/wp-content/uploads/2025/01/picsmaster-ai-photo-editor-pro.webp",
+    "title": "PhotoMaster Pro",
+    "companyName": "Creative Labs Inc",
+    "id": 1,
+    "description": "Professional photo editing suite with AI-powered enhancement tools, filters, and advanced color correction capabilities for stunning results.",
+    "size": 45.2,
+    "reviews": 28456,
+    "ratingAvg": 4.6,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 850 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3400 },
+      { "name": "4 star", "count": 8900 },
+      { "name": "5 star", "count": 14106 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/42/21/e6422114-8142-d86e-f059-c36d7007db83/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/434x0w.webp",
+    "title": "FitTrack Daily",
+    "companyName": "HealthTech Solutions",
+    "id": 2,
+    "description": "Complete fitness tracking app with workout plans, calorie counter, and personalized health insights to achieve your wellness goals.",
+    "size": 32.8,
+    "reviews": 45623,
+    "ratingAvg": 4.8,
+    "downloads": 8900000,
+    "ratings": [
+      { "name": "1 star", "count": 456 },
+      { "name": "2 star", "count": 912 },
+      { "name": "3 star", "count": 2281 },
+      { "name": "4 star", "count": 11406 },
+      { "name": "5 star", "count": 30568 }
+    ]
+  },
+  {
+    "image": "https://m.media-amazon.com/images/I/31fB19kWpWL.png",
+    "title": "BudgetWise",
+    "companyName": "FinanceFlow Corp",
+    "id": 3,
+    "description": "Smart money management tool that helps track expenses, create budgets, and save more with intelligent financial insights.",
+    "size": 28.5,
+    "reviews": 19234,
+    "ratingAvg": 4.4,
+    "downloads": 3400000,
+    "ratings": [
+      { "name": "1 star", "count": 577 },
+      { "name": "2 star", "count": 1154 },
+      { "name": "3 star", "count": 3847 },
+      { "name": "4 star", "count": 7694 },
+      { "name": "5 star", "count": 5962 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/fa/b9/cdfab985-1e24-0625-1ad8-366e1283562f/AppIcon-0-0-1x_U007emarketing-0-6-0-0-85-220.png/512x512bb.jpg",
+    "title": "MindfulMe",
+    "companyName": "Zen Studios",
+    "id": 4,
+    "description": "Meditation and mindfulness app featuring guided sessions, breathing exercises, and sleep stories for mental wellness.",
+    "size": 52.1,
+    "reviews": 34567,
+    "ratingAvg": 4.7,
+    "downloads": 6700000,
+    "ratings": [
+      { "name": "1 star", "count": 691 },
+      { "name": "2 star", "count": 1038 },
+      { "name": "3 star", "count": 3457 },
+      { "name": "4 star", "count": 10370 },
+      { "name": "5 star", "count": 19011 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/ga3tBIqvgkMsl0slzCodYBgbXPXtF4jm9OeXAFIRZaWOI__aEHdzMXLNgCqEAV9nDBAl",
+    "title": "CodeLearn Pro",
+    "companyName": "DevEducate",
+    "id": 5,
+    "description": "Interactive coding platform with courses in Python, JavaScript, and more. Learn programming through hands-on projects.",
+    "size": 67.3,
+    "reviews": 23890,
+    "ratingAvg": 4.5,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 star", "count": 716 },
+      { "name": "2 star", "count": 1195 },
+      { "name": "3 star", "count": 3584 },
+      { "name": "4 star", "count": 9556 },
+      { "name": "5 star", "count": 8839 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReofsHIrdwsxNF9NsPygp4S-u1rGJzTMLgOw&s",
+    "title": "RecipeBox",
+    "companyName": "Culinary Digital",
+    "id": 6,
+    "description": "Discover thousands of recipes, create meal plans, and generate shopping lists. Cook delicious meals with step-by-step guidance.",
+    "size": 41.6,
+    "reviews": 56789,
+    "ratingAvg": 4.9,
+    "downloads": 12300000,
+    "ratings": [
+      { "name": "1 star", "count": 568 },
+      { "name": "2 star", "count": 1136 },
+      { "name": "3 star", "count": 2839 },
+      { "name": "4 star", "count": 11358 },
+      { "name": "5 star", "count": 40888 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/YEF2UP67UgPF5_ALBp1dW2M-QONes_LM7IcCOWQElJYJmL87ZMsQ9o3tNn6s4Cy6Dh0d=w240-h480-rw",
+    "title": "TravelMate",
+    "companyName": "Wanderlust Apps",
+    "id": 7,
+    "description": "Your ultimate travel companion with itinerary planning, local recommendations, and offline maps for seamless adventures.",
+    "size": 38.9,
+    "reviews": 31245,
+    "ratingAvg": 4.3,
+    "downloads": 5600000,
+    "ratings": [
+      { "name": "1 star", "count": 1562 },
+      { "name": "2 star", "count": 1875 },
+      { "name": "3 star", "count": 4687 },
+      { "name": "4 star", "count": 9374 },
+      { "name": "5 star", "count": 13747 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy43w6CEJ-04viQyfe7fFFAs0wJpNXq1kIYQ&s",
+    "title": "MusicStream Plus",
+    "companyName": "Harmony Tech",
+    "id": 8,
+    "description": "Stream millions of songs, create playlists, and discover new artists with personalized recommendations and high-quality audio.",
+    "size": 55.7,
+    "reviews": 78934,
+    "ratingAvg": 4.6,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 2368 },
+      { "name": "2 star", "count": 3947 },
+      { "name": "3 star", "count": 11840 },
+      { "name": "4 star", "count": 23681 },
+      { "name": "5 star", "count": 37098 }
+    ]
+  }
+]

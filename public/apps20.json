@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://liteapks.com/wp-content/uploads/2025/01/picsmaster-ai-photo-editor-pro.webp",
+    "title": "PhotoMaster Pro",
+    "companyName": "Creative Labs Inc",
+    "id": 1,
+    "description": "Professional photo editing suite with AI-powered enhancement tools, filters, and advanced color correction capabilities for stunning results.",
+    "size": 45.2,
+    "reviews": 28456,
+    "ratingAvg": 4.6,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 850 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3400 },
+      { "name": "4 star", "count": 8900 },
+      { "name": "5 star", "count": 14106 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/42/21/e6422114-8142-d86e-f059-c36d7007db83/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/434x0w.webp",
+    "title": "FitTrack Daily",
+    "companyName": "HealthTech Solutions",
+    "id": 2,
+    "description": "Complete fitness tracking app with workout plans, calorie counter, and personalized health insights to achieve your wellness goals.",
+    "size": 32.8,
+    "reviews": 45623,
+    "ratingAvg": 4.8,
+    "downloads": 8900000,
+    "ratings": [
+      { "name": "1 star", "count": 456 },
+      { "name": "2 star", "count": 912 },
+      { "name": "3 star", "count": 2281 },
+      { "name": "4 star", "count": 11406 },
+      { "name": "5 star", "count": 30568 }
+    ]
+  },
+  {
+    "image": "https://m.media-amazon.com/images/I/31fB19kWpWL.png",
+    "title": "BudgetWise",
+    "companyName": "FinanceFlow Corp",
+    "id": 3,
+    "description": "Smart money management tool that helps track expenses, create budgets, and save more with intelligent financial insights.",
+    "size": 28.5,
+    "reviews": 19234,
+    "ratingAvg": 4.4,
+    "downloads": 3400000,
+    "ratings": [
+      { "name": "1 star", "count": 577 },
+      { "name": "2 star", "count": 1154 },
+      { "name": "3 star", "count": 3847 },
+      { "name": "4 star", "count": 7694 },
+      { "name": "5 star", "count": 5962 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/fa/b9/cdfab985-1e24-0625-1ad8-366e1283562f/AppIcon-0-0-1x_U007emarketing-0-6-0-0-85-220.png/512x512bb.jpg",
+    "title": "MindfulMe",
+    "companyName": "Zen Studios",
+    "id": 4,
+    "description": "Meditation and mindfulness app featuring guided sessions, breathing exercises, and sleep stories for mental wellness.",
+    "size": 52.1,
+    "reviews": 34567,
+    "ratingAvg": 4.7,
+    "downloads": 6700000,
+    "ratings": [
+      { "name": "1 star", "count": 691 },
+      { "name": "2 star", "count": 1038 },
+      { "name": "3 star", "count": 3457 },
+      { "name": "4 star", "count": 10370 },
+      { "name": "5 star", "count": 19011 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/65/08/3b/65083b3a-188a-973c-685e-9aef6c5cc544/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+    "title": "CodeLearn Pro",
+    "companyName": "DevEducate",
+    "id": 5,
+    "description": "Interactive coding platform with courses in Python, JavaScript, and more. Learn programming through hands-on projects.",
+    "size": 67.3,
+    "reviews": 23890,
+    "ratingAvg": 4.5,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 star", "count": 716 },
+      { "name": "2 star", "count": 1195 },
+      { "name": "3 star", "count": 3584 },
+      { "name": "4 star", "count": 9556 },
+      { "name": "5 star", "count": 8839 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReofsHIrdwsxNF9NsPygp4S-u1rGJzTMLgOw&s",
+    "title": "RecipeBox",
+    "companyName": "Culinary Digital",
+    "id": 6,
+    "description": "Discover thousands of recipes, create meal plans, and generate shopping lists. Cook delicious meals with step-by-step guidance.",
+    "size": 41.6,
+    "reviews": 56789,
+    "ratingAvg": 4.9,
+    "downloads": 12300000,
+    "ratings": [
+      { "name": "1 star", "count": 568 },
+      { "name": "2 star", "count": 1136 },
+      { "name": "3 star", "count": 2839 },
+      { "name": "4 star", "count": 11358 },
+      { "name": "5 star", "count": 40888 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/YEF2UP67UgPF5_ALBp1dW2M-QONes_LM7IcCOWQElJYJmL87ZMsQ9o3tNn6s4Cy6Dh0d=w240-h480-rw",
+    "title": "TravelMate",
+    "companyName": "Wanderlust Apps",
+    "id": 7,
+    "description": "Your ultimate travel companion with itinerary planning, local recommendations, and offline maps for seamless adventures.",
+    "size": 38.9,
+    "reviews": 31245,
+    "ratingAvg": 4.3,
+    "downloads": 5600000,
+    "ratings": [
+      { "name": "1 star", "count": 1562 },
+      { "name": "2 star", "count": 1875 },
+      { "name": "3 star", "count": 4687 },
+      { "name": "4 star", "count": 9374 },
+      { "name": "5 star", "count": 13747 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy43w6CEJ-04viQyfe7fFFAs0wJpNXq1kIYQ&s",
+    "title": "MusicStream Plus",
+    "companyName": "Harmony Tech",
+    "id": 8,
+    "description": "Stream millions of songs, create playlists, and discover new artists with personalized recommendations and high-quality audio.",
+    "size": 55.7,
+    "reviews": 78934,
+    "ratingAvg": 4.6,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 2368 },
+      { "name": "2 star", "count": 3947 },
+      { "name": "3 star", "count": 11840 },
+      { "name": "4 star", "count": 23681 },
+      { "name": "5 star", "count": 37098 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/b5/d9/c2/b5d9c29b-c556-d510-0000-13ae4bd9abc5/AppIcon-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg",
+    "title": "TaskMaster",
+    "companyName": "Productivity Plus",
+    "id": 9,
+    "description": "Powerful task management and productivity tool with projects, reminders, collaboration features, and calendar integration.",
+    "size": 29.4,
+    "reviews": 42156,
+    "ratingAvg": 4.5,
+    "downloads": 7800000,
+    "ratings": [
+      { "name": "1 star", "count": 1265 },
+      { "name": "2 star", "count": 1686 },
+      { "name": "3 star", "count": 4216 },
+      { "name": "4 star", "count": 12647 },
+      { "name": "5 star", "count": 22342 }
+    ]
+  },
+  {
+    "image": "https://www.surepetcare.com/media/product_options/299surepetcare_hub_front_cableslights-on.png",
+    "title": "PetCare Hub",
+    "companyName": "Animal Friends Digital",
+    "id": 10,
+    "description": "Complete pet care solution with vet appointment tracking, feeding schedules, health records, and training tips for your furry friends.",
+    "size": 36.2,
+    "reviews": 18567,
+    "ratingAvg": 4.7,
+    "downloads": 2900000,
+    "ratings": [
+      { "name": "1 star", "count": 371 },
+      { "name": "2 star", "count": 743 },
+      { "name": "3 star", "count": 2785 },
+      { "name": "4 star", "count": 5570 },
+      { "name": "5 star", "count": 9098 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/hBum4RqoXi5--F7KBhbeXpWpv23g6wW2DV6-VZyn4mi0g1C24M-Pxnu8SXCLeNeDmjo=w240-h480-rw",
+    "title": "LanguageMaster",
+    "companyName": "Polyglot Education",
+    "id": 11,
+    "description": "Learn new languages through interactive lessons, conversation practice, and gamified exercises. Master Spanish, French, and more.",
+    "size": 73.8,
+    "reviews": 67823,
+    "ratingAvg": 4.8,
+    "downloads": 15600000,
+    "ratings": [
+      { "name": "1 star", "count": 1356 },
+      { "name": "2 star", "count": 2034 },
+      { "name": "3 star", "count": 6782 },
+      { "name": "4 star", "count": 20347 },
+      { "name": "5 star", "count": 37304 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzXrgZ3C9HuKq3jWnTBCu5YZ2y6AtVipeag&s",
+    "title": "HomeDesign 3D",
+    "companyName": "Architecture Apps Inc",
+    "id": 12,
+    "description": "Design and visualize your dream home in 3D. Create floor plans, decorate rooms, and experiment with furniture layouts easily.",
+    "size": 89.5,
+    "reviews": 25634,
+    "ratingAvg": 4.4,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 1282 },
+      { "name": "2 star", "count": 1795 },
+      { "name": "3 star", "count": 3845 },
+      { "name": "4 star", "count": 8976 },
+      { "name": "5 star", "count": 9736 }
+    ]
+  },
+  {
+    "image": "https://cdn6.aptoide.com/imgs/4/b/b/4bbed8a0a5537505596bafee8dea64b2_icon.png",
+    "title": "NewsHub Daily",
+    "companyName": "InfoStream Media",
+    "id": 13,
+    "description": "Stay informed with curated news from trusted sources. Personalized feed covering world news, tech, sports, and entertainment.",
+    "size": 23.7,
+    "reviews": 39471,
+    "ratingAvg": 4.2,
+    "downloads": 9200000,
+    "ratings": [
+      { "name": "1 star", "count": 2368 },
+      { "name": "2 star", "count": 3158 },
+      { "name": "3 star", "count": 7894 },
+      { "name": "4 star", "count": 13525 },
+      { "name": "5 star", "count": 12526 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJwNmGd6Fpe8tcUKygzz_wsZgTb7c9w9hNig&s",
+    "title": "WeatherPro",
+    "companyName": "Climate Insights",
+    "id": 14,
+    "description": "Accurate weather forecasts with radar maps, severe weather alerts, and detailed hourly predictions for any location worldwide.",
+    "size": 31.2,
+    "reviews": 52987,
+    "ratingAvg": 4.6,
+    "downloads": 18700000,
+    "ratings": [
+      { "name": "1 star", "count": 1590 },
+      { "name": "2 star", "count": 2120 },
+      { "name": "3 star", "count": 5299 },
+      { "name": "4 star", "count": 15896 },
+      { "name": "5 star", "count": 28082 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/WYQ-iNSXt2twABwWZDZ0wia0MpnPzQencaFcJYMMfbutazd5U5bGJufmU8ohQz-K0FIM",
+    "title": "GardenGuru",
+    "companyName": "Green Thumb Digital",
+    "id": 15,
+    "description": "Plant identification, care guides, and gardening tips. Track watering schedules and get personalized advice for your garden.",
+    "size": 44.9,
+    "reviews": 14732,
+    "ratingAvg": 4.5,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 442 },
+      { "name": "2 star", "count": 737 },
+      { "name": "3 star", "count": 2210 },
+      { "name": "4 star", "count": 5893 },
+      { "name": "5 star", "count": 5450 }
+    ]
+  },
+  {
+    "image": "https://www.cozmoslabs.com/wp-content/uploads/2016/02/pb-add-on-social-connect-logo.png.webp",
+    "title": "SocialConnect",
+    "companyName": "Network Solutions Ltd",
+    "id": 16,
+    "description": "Connect with friends and family, share moments, and discover content from people around the world in a vibrant social community.",
+    "size": 61.4,
+    "reviews": 124567,
+    "ratingAvg": 4.1,
+    "downloads": 45000000,
+    "ratings": [
+      { "name": "1 star", "count": 12457 },
+      { "name": "2 star", "count": 13703 },
+      { "name": "3 star", "count": 24913 },
+      { "name": "4 star", "count": 37370 },
+      { "name": "5 star", "count": 36124 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/62a49v803fY0zpgAOorYYsGiJjVmlNVJ90CT8RLSoGGFOw3dskBX0cK8TFHIUFrkHA=w240-h480-rw",
+    "title": "SafeDrive Monitor",
+    "companyName": "Auto Safety Tech",
+    "id": 17,
+    "description": "Track driving habits, get safety scores, and receive real-time alerts. Improve your driving and potentially lower insurance rates.",
+    "size": 27.6,
+    "reviews": 16845,
+    "ratingAvg": 4.3,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 842 },
+      { "name": "2 star", "count": 1179 },
+      { "name": "3 star", "count": 3369 },
+      { "name": "4 star", "count": 6738 },
+      { "name": "5 star", "count": 4717 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2BgfzPLW81ob4OFqDIzT1FBtItkccsg8ug&s",
+    "title": "VideoEdit Studio",
+    "companyName": "Creator Tools Pro",
+    "id": 18,
+    "description": "Professional video editing on mobile. Add effects, transitions, music, and text to create stunning videos for social media.",
+    "size": 82.3,
+    "reviews": 48921,
+    "ratingAvg": 4.7,
+    "downloads": 11400000,
+    "ratings": [
+      { "name": "1 star", "count": 1468 },
+      { "name": "2 star", "count": 1957 },
+      { "name": "3 star", "count": 4892 },
+      { "name": "4 star", "count": 14676 },
+      { "name": "5 star", "count": 25928 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe2FY9bcr4t4yCM_uUOd7593dM-25OlOkCrw&s",
+    "title": "StarGaze",
+    "companyName": "Astronomy Apps",
+    "id": 19,
+    "description": "Explore the night sky with AR star maps, constellation guides, and real-time celestial event notifications for astronomy enthusiasts.",
+    "size": 58.1,
+    "reviews": 22394,
+    "ratingAvg": 4.8,
+    "downloads": 4700000,
+    "ratings": [
+      { "name": "1 star", "count": 448 },
+      { "name": "2 star", "count": 672 },
+      { "name": "3 star", "count": 2239 },
+      { "name": "4 star", "count": 7838 },
+      { "name": "5 star", "count": 11197 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/UxIJEGNjCqIyT0G6juqFUyEv7PcIildbwJSkDzZ77IkoR-oYdDyqVjfAg6CJwUEletw=w240-h480-rw",
+    "title": "ShopSmart",
+    "companyName": "Retail Innovations",
+    "id": 20,
+    "description": "Price comparison tool that finds the best deals across online stores. Save money with coupons, alerts, and cashback offers.",
+    "size": 34.5,
+    "reviews": 36712,
+    "ratingAvg": 4.4,
+    "downloads": 8300000,
+    "ratings": [
+      { "name": "1 star", "count": 1469 },
+      { "name": "2 star", "count": 1835 },
+      { "name": "3 star", "count": 5507 },
+      { "name": "4 star", "count": 11014 },
+      { "name": "5 star", "count": 16887 }
+    ]
+  }
+]
