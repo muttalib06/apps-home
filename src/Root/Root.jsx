@@ -6,18 +6,23 @@ import Footer from "../Components/Footer/Footer";
 
 const Root = () => {
   const navigation = useNavigation();
-  const isLoading = navigation.state ==="loading";
-  return <>
-           <Navbar></Navbar>
-           {isLoading && <Spinner></Spinner>}
+  const isLoading = navigation.state === "loading";
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <Spinner></Spinner>
+      </div>
+    );
+  }
+  return (
+    <>
+      <Navbar></Navbar>
 
-            <Outlet></Outlet>
+      <Outlet></Outlet>
 
-            <Footer></Footer>
-         
-  
-  
-  </>;
+      <Footer></Footer>
+    </>
+  );
 };
 
 export default Root;

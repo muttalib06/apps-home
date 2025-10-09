@@ -1,7 +1,6 @@
 import React from "react";
 import heroImg from "../../assets/logo.png";
 import { NavLink } from "react-router";
-import { Github } from "lucide";
 import { FaGithub } from "react-icons/fa6";
 
 const Navbar = () => {

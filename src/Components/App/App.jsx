@@ -15,7 +15,7 @@ const App = ({ app,}) => {
     return number.toString();
   };
   return (
-    <NavLink to={`/appDetail/${id}`}>
+    <NavLink onClick={() => window.scrollTo(0,0)} to={`/appDetail/${id}`}>
       <div className="text-left shadow-md rounded-lg p-3 border border-gray-300 space-y-3 self-stretch h-full flex flex-col justify-between">
         <img className="rounded-md w-full" src={image} alt="" />
         <p>{title}</p>

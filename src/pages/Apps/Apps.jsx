@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { NavLink, useLoaderData } from "react-router";
-import errorImg from "../../assets/App-Error.png"
+import { NavLink, useLoaderData} from "react-router";
+import errorImg from "../../assets/App-Error.png";
 import App2 from "../../Components/App2/App2";
+
 
 const Apps = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -55,11 +56,15 @@ const Apps = () => {
           filteredApps.map((app) => <App2 key={app.id} app={app}></App2>)
         ) : (
           <div className="col-span-4 flex justify-center items-center flex-col space-y-2">
-                <img className="w-80 h-80" src={errorImg} alt="" />
-                <h2 className="font-semibold text-5xl">OPPS!! APP NOT FOUND</h2>
-                <p className="text-[#627382]">The App you are requesting is not found on our system.  please try another apps</p>
-                 <button className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white my-8"><NavLink to="/apps">Go Back!</NavLink></button>
-
+            <img className="w-80 h-80" src={errorImg} alt="" />
+            <h2 className="font-semibold text-5xl">OPPS!! APP NOT FOUND</h2>
+            <p className="text-[#627382]">
+              The App you are requesting is not found on our system. please try
+              another apps
+            </p>
+            <button className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white my-8">
+              <NavLink to="/apps">Go Back!</NavLink>
+            </button>
           </div>
         )}
       </div>
