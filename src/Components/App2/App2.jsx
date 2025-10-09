@@ -1,10 +1,9 @@
 import React from "react";
-import { Download } from "lucide";
+import { NavLink } from "react-router";
 import { FaDownload } from "react-icons/fa6";
 import { FcRating } from "react-icons/fc";
-import { NavLink } from "react-router";
 
-const App = ({ app,}) => {
+const App2 = ({ app }) => {
   const { id, image, title, ratingAvg, downloads } = app;
   const toMillion = (number) => {
     if (number >= 1000000) {
@@ -34,4 +33,4 @@ const App = ({ app,}) => {
   );
 };
 
-export default App;
+export default App2;

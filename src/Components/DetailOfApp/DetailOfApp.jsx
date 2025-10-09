@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { FaDove, FaDownload } from "react-icons/fa6";
 import { FcRating } from "react-icons/fc";
 import likeImg from "../../assets/Vector (1).png";
-  import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
+import Chart from "react-apexcharts";
 
 const DetailOfApp = ({ singleApp }) => {
   const [isDisabled, setIsDisabled] = useState(false);
-      const notify = () => toast.success("Installed");
+  const notify = () => toast.success("Installed");
   const handleClick = () => {
     setIsDisabled(true);
   };
-  const { image, title, ratingAvg, downloads, companyName, reviews } =
+  const { image, title, ratingAvg, downloads, companyName, reviews,ratings,description } =
     singleApp;
 
   const toMillion = (number) => {
@@ -21,6 +22,34 @@ const DetailOfApp = ({ singleApp }) => {
     }
     return number.toString();
   };
+
+  const options = {
+    chart: {
+      type: "bar",
+      height: 350,
+    },
+    colors: ["#FF8811"],
+    plotOptions: {
+      bar: {
+        borderRadius: 4,
+        borderRadiusApplication: "end",
+        horizontal: true,
+      },
+    },
+    dataLabels: {
+      enabled:false,
+    },
+    xaxis: {
+      categories: ratings.map((item) => item.name),
+    },
+  };
+
+  const series = [
+    {
+      data: ratings.map((item) => item.count),
+    },
+  ];
+
   return (
     <div>
       <div className="max-w-[90%] mx-auto mt-8 flex gap-8">
@@ -63,10 +92,9 @@ const DetailOfApp = ({ singleApp }) => {
 
           <button
             disabled={isDisabled}
-            onClick={ () => {
-
-                handleClick();
-                notify()
+            onClick={() => {
+              handleClick();
+              notify();
             }}
             className="btn bg-[#00D390] text-white mt-8"
           >
@@ -75,7 +103,24 @@ const DetailOfApp = ({ singleApp }) => {
         </div>
       </div>
       <div className=" max-w-[90%] mx-auto mt-8 border-b border-gray-300"></div>
-        <ToastContainer />
+
+    
+      <div className="max-w-[90%] mx-auto mt-4" >
+          <h4 className="font-semibold">Ratings</h4>
+           <Chart options={options} series={series} type="bar" height={350} />
+      
+      </div>
+       <div className="border-b border-gray-300"></div>
+
+
+       <div  className="max-w-[90%] mx-auto mt-4 space-y-2" >
+        <h4 className="text-[#001931] text-2xl font-semibold">Description</h4>
+
+        <p className="text-[#627382]">{description}</p>
+
+       </div>
+
+      <ToastContainer />
     </div>
   );
 };

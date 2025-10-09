@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
         errorElement: <div>Page not found</div>,
         loader: async () => {
           try {
-            const response = await fetch("/apps8.json");
+            const response = await fetch("/apps20.json");
             if (!response.ok) {
               throw new Error("Failed to fetch app detail");
             }
