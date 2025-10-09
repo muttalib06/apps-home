@@ -7,7 +7,6 @@ const AppDetail = () => {
   const appId = parseInt(id);
   const apps = useLoaderData();
   const singleApp = apps.find((app) => app.id === appId);
-  console.log(singleApp);
 
   return <DetailOfApp singleApp={singleApp}></DetailOfApp>;
 };

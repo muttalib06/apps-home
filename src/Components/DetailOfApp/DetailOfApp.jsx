@@ -116,7 +116,7 @@ const DetailOfApp = ({ singleApp }) => {
        <div  className="max-w-[90%] mx-auto mt-4 space-y-2" >
         <h4 className="text-[#001931] text-2xl font-semibold">Description</h4>
 
-        <p className="text-[#627382]">{description}</p>
+        <p className="text-[#627382] leading-8">{description}</p>
 
        </div>
 
