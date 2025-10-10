@@ -2,8 +2,8 @@ import React from "react";
 import { BiDownload } from "react-icons/bi";
 import { FcRating } from "react-icons/fc";
 
-const InstalledApp = ({ app,handleRemove }) => {
-  const {id,image, title, ratingAvg, downloads } = app;
+const InstalledApp = ({ app, handleRemove }) => {
+  const { id, image, title, ratingAvg, downloads } = app;
   const toMillion = (number) => {
     if (number >= 1000000) {
       return (number / 1000000).toFixed(1) + "M";
@@ -29,7 +29,12 @@ const InstalledApp = ({ app,handleRemove }) => {
           </div>
         </div>
       </div>
-      <button onClick={() => handleRemove(id)} className="btn bg-[#00D390] text-white my-3 md:my-0">Uninstall</button>
+      <button
+        onClick={() => handleRemove(id)}
+        className="btn bg-[#00D390] text-white my-3 md:my-0"
+      >
+        Uninstall
+      </button>
     </div>
   );
 };

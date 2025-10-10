@@ -8,6 +8,8 @@ import InstalledApp from "../Components/InstalledApp/InstalledApp";
 
 const Installation = () => {
   const [installedApp, setInstalledApp] = useState(getDataFromLocalStorage());
+  const [sortOrder, setSortOrder] = useState();
+
   const appsData = useLoaderData();
 
   const handleRemove = (id) => {
@@ -15,12 +17,27 @@ const Installation = () => {
     setInstalledApp(remainApp);
     removeDataFromLocalStorage(id);
   };
-  console.log(appsData);
+
   // const installedApps = getDataFromLocalStorage();
   const filteredApps = appsData.filter((item) =>
     installedApp.includes(item.id)
   );
-  console.log(filteredApps);
+
+  const sortedApps = [...filteredApps].sort((a, b) => {
+    if (sortOrder === "highToLow") {
+      return b.downloads - a.downloads;
+    } else if (sortOrder === "lowToHigh") {
+      return a.downloads - b.downloads;
+    }
+    return 0;
+  });
+  const handleHighToLow = () => {
+    setSortOrder("highToLow")
+  };
+  const handleLowToHigh = () => {
+    setSortOrder("lowToHigh")
+  }
+
   return (
     <div className=" max-w-[80%] mx-auto mt-10">
       <div className="text-center space-y-3">
@@ -33,11 +50,31 @@ const Installation = () => {
       </div>
 
       <div className="mt-10">
-        <h4 className="my-3 text-[#001931] font-semibold text-2xl">
-          {filteredApps.length} Apps Found
-        </h4>
+        <div className="flex justify-between items-center">
+          <h4 className="my-3 text-[#001931] font-semibold text-2xl">
+            {filteredApps.length} Apps Found
+          </h4>
+
+          <div className="dropdown dropdown-center">
+            <div tabIndex={0} role="button" className="btn m-1">
+              Sort By Size ⬇️
+            </div>
+            <ul
+              tabIndex={0}
+              className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+            >
+              <li>
+                <button onClick={handleHighToLow}>High-Low</button>
+              </li>
+              <li>
+                <button onClick={handleLowToHigh}>Low-High</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className="space-y-3">
-          {filteredApps.map((app) => (
+          {sortedApps.map((app) => (
             <InstalledApp
               key={app.id}
               app={app}
