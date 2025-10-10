@@ -1,18 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaDove, FaDownload } from "react-icons/fa6";
 import { FcRating } from "react-icons/fc";
 import likeImg from "../../assets/Vector (1).png";
 import { ToastContainer, toast } from "react-toastify";
 import Chart from "react-apexcharts";
+import {
+  getDataFromLocalStorage,
+  setDataToLocalStorage,
+} from "../../Utility/localstorage";
 
 const DetailOfApp = ({ singleApp }) => {
   const [isDisabled, setIsDisabled] = useState(false);
+
   const notify = () => toast.success("Installed");
-  const handleClick = () => {
+  const handleClick = (id) => {
     setIsDisabled(true);
+    setDataToLocalStorage(id);
   };
-  const { image, title, ratingAvg, downloads, companyName, reviews,ratings,description } =
-    singleApp;
+
+  const {
+    id,
+    image,
+    title,
+    ratingAvg,
+    downloads,
+    companyName,
+    reviews,
+    ratings,
+    description,
+  } = singleApp;
 
   const toMillion = (number) => {
     if (number >= 1000000) {
@@ -37,7 +53,7 @@ const DetailOfApp = ({ singleApp }) => {
       },
     },
     dataLabels: {
-      enabled:false,
+      enabled: false,
     },
     xaxis: {
       categories: ratings.map((item) => item.name),
@@ -52,7 +68,7 @@ const DetailOfApp = ({ singleApp }) => {
 
   return (
     <div>
-      <div className="max-w-[90%] mx-auto mt-8 flex gap-8">
+      <div className="max-w-[90%] mx-auto mt-8 flex flex-col md:flex-row gap-8">
         <img
           className="w-80 h-80 shadow-md rounded-lg flex justify-center items-center border border-gray-300 p-5"
           src={image}
@@ -69,7 +85,7 @@ const DetailOfApp = ({ singleApp }) => {
           </div>
           <div className="border-b border-gray-300"></div>
 
-          <div className="flex items-center gap-10 my-3">
+          <div className="flex items-center gap-10 my-3 flex-col md:flex-row">
             <div className="text-center flex items-center justify-center flex-col space-y-2">
               <FaDownload className="text-2xl text-[#54CF68]" />
               <p>Download</p>
@@ -90,35 +106,33 @@ const DetailOfApp = ({ singleApp }) => {
             </div>
           </div>
 
-          <button
-            disabled={isDisabled}
-            onClick={() => {
-              handleClick();
-              notify();
-            }}
-            className="btn bg-[#00D390] text-white mt-8"
-          >
-            {isDisabled ? "Installed" : "Install Now (291 MB)"}
-          </button>
+          <div className="flex justify-center md:justify-start items-center">
+            <button
+              disabled={isDisabled}
+              onClick={() => {
+                handleClick(id);
+                notify();
+              }}
+              className="btn bg-[#00D390] text-white mt-8 "
+            >
+              {isDisabled ? "Installed" : "Install Now (291 MB)"}
+            </button>
+          </div>
         </div>
       </div>
       <div className=" max-w-[90%] mx-auto mt-8 border-b border-gray-300"></div>
 
-    
-      <div className="max-w-[90%] mx-auto mt-4" >
-          <h4 className="font-semibold">Ratings</h4>
-           <Chart options={options} series={series} type="bar" height={350} />
-      
+      <div className="max-w-[90%] mx-auto mt-4">
+        <h4 className="font-semibold">Ratings</h4>
+        <Chart options={options} series={series} type="bar" height={350} />
       </div>
-       <div className="border-b border-gray-300"></div>
+      <div className="border-b border-gray-300"></div>
 
-
-       <div  className="max-w-[90%] mx-auto mt-4 space-y-2" >
+      <div className="max-w-[90%] mx-auto mt-4 space-y-2">
         <h4 className="text-[#001931] text-2xl font-semibold">Description</h4>
 
-        <p className="text-[#627382] leading-8">{description}</p>
-
-       </div>
+        <p className="text-[#627382] leading-8 text-justify">{description}</p>
+      </div>
 
       <ToastContainer />
     </div>

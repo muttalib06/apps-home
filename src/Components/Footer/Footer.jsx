@@ -13,8 +13,8 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#272727] text-white flex justify-around items-start px-10 py-15 mt-8">
-        <div className="max-w-[25%]">
+      <div className="bg-[#272727] text-white flex flex-col md:flex-row justify-around items-start px-10 py-15 mt-8 space-y-4 md:space-y-0">
+        <div className="md:max-w-[25%]">
           <h3 className="font-bold mb-8">HERO.IO</h3>
           <p className="text-[0.8rem] text-gray-500">
             HERO.IO is a forward-thinking app development company dedicated to
@@ -59,7 +59,7 @@ const Footer = () => {
 
         <div>
           <div>
-            <h4>SUBSCRIBE</h4>
+            <h4 className="font-bold">SUBSCRIBE</h4>
 
             <div className="flex gap-2 p-4">
               <input
@@ -100,7 +100,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#1a1a1a] px-10 py-10 flex justify-around items-center text-white">
+      <div className="bg-[#1a1a1a] px-10 py-10 flex flex-col md:flex-row justify-around items-center text-white space-y-3 md:space-y-0">
         <p className="flex items-center text-[.7rem] text-gray-400">Copyright<CgCopyright/> All rights reserved by HERO.IO</p>
 
         <div className="flex items-center gap-4 text-[.7rem] text-gray-400">

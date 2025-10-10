@@ -1,11 +1,23 @@
 import React, { useState } from "react";
-import { NavLink, useLoaderData} from "react-router";
+import { NavLink, useLoaderData } from "react-router";
 import errorImg from "../../assets/App-Error.png";
 import App2 from "../../Components/App2/App2";
-
+import Spinner from "../../Spinner/Spinner";
 
 const Apps = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSearch = (value) => {
+    if (value) {
+      setIsLoading(true);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+    } else {
+      setIsLoading(false);
+    }
+  };
 
   const apps = useLoaderData();
   const filteredApps = apps.filter((app) => {
@@ -19,7 +31,7 @@ const Apps = () => {
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
 
-      <div className="flex items-center justify-between">
+      <div className="flex items-center flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
         <h4 className="md:text-left font-semibold md:text-2xl">
           ({filteredApps.length}) Apps Found
         </h4>
@@ -43,7 +55,9 @@ const Apps = () => {
           </svg>
           <input
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={(e) => {
+              setSearchTerm(e.target.value), handleSearch(e.target.value);
+            }}
             type="search"
             required
             placeholder="Search"
@@ -51,7 +65,7 @@ const Apps = () => {
         </label>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 mt-8 gap-4 auto-rows-fr mx-3 md:mx-0">
+      {isLoading? <div className="flex justify-center items-center h-screen"><Spinner></Spinner></div>: <div className="grid grid-cols-1 md:grid-cols-4 mt-8 gap-4 auto-rows-fr mx-3 md:mx-0">
         {filteredApps.length > 0 ? (
           filteredApps.map((app) => <App2 key={app.id} app={app}></App2>)
         ) : (
@@ -67,7 +81,9 @@ const Apps = () => {
             </button>
           </div>
         )}
-      </div>
+      </div>}
+
+     
     </div>
   );
 };
