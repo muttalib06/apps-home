@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaDove, FaDownload } from "react-icons/fa6";
 import { FcRating } from "react-icons/fc";
 import likeImg from "../../assets/Vector (1).png";
@@ -8,14 +8,17 @@ import {
   getDataFromLocalStorage,
   setDataToLocalStorage,
 } from "../../Utility/localstorage";
+import { SiAlwaysdata } from "react-icons/si";
 
 const DetailOfApp = ({ singleApp }) => {
   const [isDisabled, setIsDisabled] = useState(false);
+  const installedApp = getDataFromLocalStorage();
+  const isInstalled = installedApp.includes(singleApp.id);
 
-  const notify = () => toast.success("Installed");
   const handleClick = (id) => {
-    setIsDisabled(true);
     setDataToLocalStorage(id);
+    setIsDisabled(true);
+    toast.success("Installed Successfully");
   };
 
   const {
@@ -110,12 +113,15 @@ const DetailOfApp = ({ singleApp }) => {
             <button
               disabled={isDisabled}
               onClick={() => {
-                handleClick(id);
-                notify();
+                if (isInstalled) {
+                  toast.warning("Already Installed");
+                } else {
+                  handleClick(id);
+                }
               }}
               className="btn bg-[#00D390] text-white mt-8 "
             >
-              {isDisabled ? "Installed" : "Install Now (291 MB)"}
+              {isDisabled || isInstalled ? "Installed" : "Install Now (291 MB)"}
             </button>
           </div>
         </div>

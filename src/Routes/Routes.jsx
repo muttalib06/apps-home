@@ -22,7 +22,15 @@ export const router = createBrowserRouter([
         },
         Component: Apps,
       },
-      { path: "installation", Component: Installation },
+      {
+        path: "installation",
+        loader: async () => {
+          const response = await fetch("/apps20.json");
+          await new Promise((resolve) => setTimeout(resolve, 1000));
+          return await response.json();
+        },
+        Component: Installation,
+      },
       {
         path: "appDetail/:id",
         loader: async () => {
