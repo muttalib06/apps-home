@@ -69,7 +69,7 @@ const Apps = () => {
         {filteredApps.length > 0 ? (
           filteredApps.map((app) => <App2 key={app.id} app={app}></App2>)
         ) : (
-          <div className="col-span-4 flex justify-center items-center flex-col space-y-2">
+          <div className="col-span-4 flex justify-center items-center flex-col space-y-2 h-screen">
             <img className="w-80 h-80" src={errorImg} alt="" />
             <h2 className="font-semibold text-5xl">OPPS!! APP NOT FOUND</h2>
             <p className="text-[#627382]">

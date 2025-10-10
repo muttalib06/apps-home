@@ -111,13 +111,9 @@ const DetailOfApp = ({ singleApp }) => {
 
           <div className="flex justify-center md:justify-start items-center">
             <button
-              disabled={isDisabled}
+              disabled={isDisabled || isInstalled}
               onClick={() => {
-                if (isInstalled) {
-                  toast.warning("Already Installed");
-                } else {
-                  handleClick(id);
-                }
+                !isInstalled && handleClick(id);
               }}
               className="btn bg-[#00D390] text-white mt-8 "
             >

@@ -6,11 +6,13 @@ import Installation from "../pages/Installation";
 import AppDetail from "../pages/AppDetail/AppDetail";
 import { Suspense } from "react";
 import Spinner from "../Spinner/Spinner";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       { index: true, Component: Home },
       {

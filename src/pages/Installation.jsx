@@ -5,10 +5,11 @@ import {
   removeDataFromLocalStorage,
 } from "../Utility/localstorage";
 import InstalledApp from "../Components/InstalledApp/InstalledApp";
+import { ToastContainer, toast } from "react-toastify";
 
 const Installation = () => {
   const [installedApp, setInstalledApp] = useState(getDataFromLocalStorage());
-  const [sortOrder, setSortOrder] = useState();
+  const [sortOrder, setSortOrder] = useState("");
 
   const appsData = useLoaderData();
 
@@ -16,6 +17,7 @@ const Installation = () => {
     const remainApp = installedApp.filter((data) => data !== id);
     setInstalledApp(remainApp);
     removeDataFromLocalStorage(id);
+    toast.success('Successfully Uninstalled')
   };
 
   // const installedApps = getDataFromLocalStorage();
@@ -83,6 +85,7 @@ const Installation = () => {
           ))}
         </div>
       </div>
+        <ToastContainer />
     </div>
   );
 };
