@@ -52,12 +52,12 @@ const Installation = () => {
       </div>
 
       <div className="mt-10">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col  md:flex-row justify-between items-center">
           <h4 className="my-3 text-[#001931] font-semibold text-2xl">
             {filteredApps.length} Apps Found
           </h4>
 
-          <div className="dropdown dropdown-center">
+          <div className="dropdown dropdown-center my-3 md:my-0">
             <div tabIndex={0} role="button" className="btn m-1">
               Sort By Size ⬇️
             </div>

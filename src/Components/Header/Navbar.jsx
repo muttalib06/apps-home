@@ -10,10 +10,12 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm flex flex-col space-y-6 md:space-y-0 md:flex-row justify-between px-6">
       <div>
-        <div className="flex items-center gap-2">
+        <NavLink to="/">
+          <div className="flex items-center gap-2">
           <img className="w-10 h-10" src={heroImg} alt="" />
           <h2 className="text-[#632EE3] font-bold">HERO.IO</h2>
         </div>
+        </NavLink>
       </div>
       <div className="space-x-5 font-medium">
         <NavLink

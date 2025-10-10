@@ -5,7 +5,7 @@ const ErrorPage = () => {
   return (
     <div className="col-span-4 flex justify-center items-center flex-col space-y-2 h-screen">
       <img className="w-80 h-80" src={errorImg} alt="" />
-      <h2 className="font-semibold text-5xl">Oops, page not found!</h2>
+      <h2 className="font-semibold text-3xl md:text-5xl">Oops, page not found!</h2>
       <p className="text-[#627382]">
        The page you are looking for is not available.
       </p>

@@ -12,9 +12,16 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
-      { index: true, Component: Home },
+      {
+        index: true,
+        loader: async () => {
+          await new Promise((resolve) => setTimeout(resolve, 1000));
+          return null;
+        },
+        Component: Home,
+      },
       {
         path: "apps",
         loader: async () => {
